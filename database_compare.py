@@ -52,5 +52,6 @@ for table in intersection_as_list:
     worksheet.write_string(db2.shape[0] + db1.shape[0] + 4, 0 ,'Delta')
     delta.to_excel(writer, sheet_name=str(table[0:30]), startrow=db1.shape[0] + 7 + db1.shape[0], startcol=0)
     worksheet
+    
 workbook.close()
 print('done')
