@@ -42,7 +42,7 @@ for table in intersection_as_list:
     total_delta = total_delta.append(delta)
     print(table + ' db2 ' + str(len(db2.columns)) + ' db1 ' + str(len(db1.columns)))
 
-    ## Write Excel, depending on how many rows are in the files locations need to be adjusted
+    ## Write Excel, depending on how many rows are in the files locations might need to be adjusted
     worksheet = workbook.add_worksheet(str(table[0:30]))
     writer.sheets[str(table[0:30])] = worksheet
     worksheet.write_string(0,0,'DB1')
